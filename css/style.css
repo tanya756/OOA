@@ -3978,6 +3978,10 @@ code {
   }
 }
 
+h4 {
+  color: unset;
+}
+
 .main {
   padding-top: 100px;
 }
@@ -4021,14 +4025,6 @@ code {
 .main .info-titbox h2, .main .file-titbox h2, .main .step-titbox h2, .main .QA-titbox h2 {
   color: #f15d21;
   margin: 8px 0;
-}
-.main .info-titbox .bgpic::before, .main .file-titbox .bgpic::before, .main .step-titbox .bgpic::before, .main .QA-titbox .bgpic::before {
-  content: url(/images/bg_01.png);
-  margin-right: 40px;
-}
-.main .info-titbox .bgpic::after, .main .file-titbox .bgpic::after, .main .step-titbox .bgpic::after, .main .QA-titbox .bgpic::after {
-  content: url(/images/bg_02.png);
-  margin-left: 25px;
 }
 .main .info-advantages, .main .info-serve, .main .file-advantages, .main .file-serve, .main .step-advantages, .main .step-serve, .main .QA-advantages, .main .QA-serve {
   margin: 50px 0;
@@ -4147,11 +4143,17 @@ code {
 .main .info-advantages-wrap .tab-tit-name, .main .info-serve-wrap .tab-tit-name, .main .file-advantages-wrap .tab-tit-name, .main .file-serve-wrap .tab-tit-name, .main .step-advantages-wrap .tab-tit-name, .main .step-serve-wrap .tab-tit-name, .main .QA-advantages-wrap .tab-tit-name, .main .QA-serve-wrap .tab-tit-name {
   color: #05367b;
   font-size: 18px;
-  padding: 20px 0;
   font-weight: 300;
   font-family: Arial, "Noto Serif SC", "Noto Sans TC", sans-serif;
   border-radius: 0;
   width: 11.9%;
+}
+.main .info-advantages-wrap .tab-tit-name h4, .main .info-serve-wrap .tab-tit-name h4, .main .file-advantages-wrap .tab-tit-name h4, .main .file-serve-wrap .tab-tit-name h4, .main .step-advantages-wrap .tab-tit-name h4, .main .step-serve-wrap .tab-tit-name h4, .main .QA-advantages-wrap .tab-tit-name h4, .main .QA-serve-wrap .tab-tit-name h4 {
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  padding: 20px 0px;
+  font-size: 18px;
 }
 .main .info-advantages-wrap .tab-content, .main .info-serve-wrap .tab-content, .main .file-advantages-wrap .tab-content, .main .file-serve-wrap .tab-content, .main .step-advantages-wrap .tab-content, .main .step-serve-wrap .tab-content, .main .QA-advantages-wrap .tab-content, .main .QA-serve-wrap .tab-content {
   padding: 50px;
@@ -4161,10 +4163,11 @@ code {
   background-color: #05367b;
   color: #ffffff;
 }
-.main .info-advantages-wrap .tab button:hover, .main .info-serve-wrap .tab button:hover, .main .file-advantages-wrap .tab button:hover, .main .file-serve-wrap .tab button:hover, .main .step-advantages-wrap .tab button:hover, .main .step-serve-wrap .tab button:hover, .main .QA-advantages-wrap .tab button:hover, .main .QA-serve-wrap .tab button:hover {
+.main .info-advantages-wrap .tab button :hover, .main .info-serve-wrap .tab button :hover, .main .file-advantages-wrap .tab button :hover, .main .file-serve-wrap .tab button :hover, .main .step-advantages-wrap .tab button :hover, .main .step-serve-wrap .tab button :hover, .main .QA-advantages-wrap .tab button :hover, .main .QA-serve-wrap .tab button :hover {
   background-color: #05367b;
   color: #ffffff;
   cursor: pointer;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .main .info-advantages-wrap, .main .info-serve-wrap, .main .file-advantages-wrap, .main .file-serve-wrap, .main .step-advantages-wrap, .main .step-serve-wrap, .main .QA-advantages-wrap, .main .QA-serve-wrap {
@@ -4192,24 +4195,11 @@ code {
     padding: 5%;
   }
 }
-@media screen and (max-width: 767px) {
-  .main .info-titbox .bgpic::before, .main .info-titbox .bgpic::after, .main .file-titbox .bgpic::before, .main .file-titbox .bgpic::after, .main .step-titbox .bgpic::before, .main .step-titbox .bgpic::after, .main .QA-titbox .bgpic::before, .main .QA-titbox .bgpic::after {
-    display: none;
-  }
-}
 .main .file {
   background-color: #4bb847;
 }
 .main .file h2 {
   color: #ffffff;
-}
-.main .file .bgpic::before {
-  content: url(/images/bg_03.png);
-  margin-right: 40px;
-}
-.main .file .bgpic::after {
-  content: url(/images/bg_04.png);
-  margin-right: 40px;
 }
 .main .file-box h3 {
   color: #05367b;
@@ -4319,18 +4309,18 @@ code {
       -ms-flex-align: center;
           align-items: center;
 }
-.main .step-box-wrap-card-data h4 {
+.main .step-box-wrap-card-data h3 {
   font-style: normal;
   color: #05367b;
   font-size: 18px;
   margin: 20px 0;
 }
-.main .step-box-wrap-card-data h4 .iconexclamation {
+.main .step-box-wrap-card-data h3 .iconexclamation {
   color: #000000;
   vertical-align: text-top;
   font-size: 1.25rem;
 }
-.main .step-box-wrap-card-data h4 a:hover {
+.main .step-box-wrap-card-data h3 a:hover {
   cursor: pointer;
 }
 .main .step-box-wrap-card-data img {
@@ -4439,8 +4429,10 @@ code {
 .main .QA details summary::-webkit-details-marker, .main .QA details summary::marker {
   display: none;
 }
-.main .QA details h5 {
+.main .QA details h3 {
   color: #05367b;
+  font-size: 20px;
+  font-weight: 600;
 }
 .main .QA details .content p {
   font-size: 16px;

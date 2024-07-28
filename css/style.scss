@@ -1619,9 +1619,6 @@ $marginWidth: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
 
 // 客制區 ==================================================
 
-body{
-    // display: grid;
-}
 [v-cloak] {
     opacity:unset;
   }
@@ -1630,6 +1627,9 @@ body{
     @include maxWidth-sm{
         padding: 50px 0;
     }
+}
+h4{
+    color: unset;
 }
 .main{
     padding-top: 100px;
@@ -1669,14 +1669,14 @@ body{
                 color: $baseOrange;
                 margin: 8px 0;
             }
-            .bgpic::before{
-                content: url(/images/bg_01.png);
-                margin-right: 40px;
-            }
-            .bgpic::after{
-                content: url(/images/bg_02.png);
-                margin-left: 25px;
-            }
+            // .bgpic::before{
+            //     content: url(/images/bg_01.png);
+            //     margin-right: 40px;
+            // }
+            // .bgpic::after{
+            //     content: url(/images/bg_02.png);
+            //     margin-left: 25px;
+            // }
         }
         &-advantages,&-serve{
             margin: 50px 0;
@@ -1782,12 +1782,20 @@ body{
                         &-name{
                             color: $baseBlue;
                             font-size: 18px;
-                            padding: 20px 0;
+                            // padding: 20px 0;
                             font-weight: 300;
                             font-family: Arial, 'Noto Serif SC', 'Noto Sans TC', sans-serif;
                             border-radius: 0;
                             //width: calc(100% / 8) - 5px;
                             width: 11.9%;
+                            h4{
+                                // color: $baseWhite;
+                                font-style: normal;
+                                text-align: center;
+                                font-weight: 400;
+                                padding: 20px 0px;
+                                font-size: 18px;
+                            }
                         }
                     }
                     &-content{
@@ -1798,10 +1806,11 @@ body{
                         background-color: $baseBlue;
                         color: $baseWhite;
                     }
-                    button:hover{
+                    button :hover{
                         background-color: $baseBlue;
                         color: $baseWhite;
                         cursor: pointer;
+                        width: 100%;
                     }
                 }
                 @include maxWidth-sm{
@@ -1827,27 +1836,27 @@ body{
                 }
             }
         }
-        @include maxWidth-sm{
-            &-titbox{
-                .bgpic::before,.bgpic::after{
-                    display: none;
-                }
-            }            
-        }
+        // @include maxWidth-sm{
+        //     &-titbox{
+        //         .bgpic::before,.bgpic::after{
+        //             display: none;
+        //         }
+        //     }            
+        // }
     }
     .file{
         background-color: $baseGreen;
         h2{
             color: $baseWhite;
         }
-        .bgpic::before{
-            content: url(/images/bg_03.png);
-            margin-right: 40px;
-        }
-        .bgpic::after{
-            content: url(/images/bg_04.png);
-            margin-right: 40px;
-        }
+        // .bgpic::before{
+        //     content: url(/images/bg_03.png);
+        //     margin-right: 40px;
+        // }
+        // .bgpic::after{
+        //     content: url(/images/bg_04.png);
+        //     margin-right: 40px;
+        // }
         &-box{
             h3{
                 color: $baseBlue;
@@ -1941,7 +1950,7 @@ body{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        h4{
+                        h3{
                             font-style: normal;
                             color: $baseBlue;
                             font-size: 18px;
@@ -2047,10 +2056,10 @@ body{
                     display:none;
                 }
             }
-            h5{
+            h3{
                 color: $baseBlue;
-                //font-size: 24px;
-                //font-weight: 300;
+                font-size: 20px;
+                font-weight: 600;
             }
             .content{
                 p{
